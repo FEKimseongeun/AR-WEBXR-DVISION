@@ -49,7 +49,7 @@
         const renderer = new THREE.WebGLRenderer({
             alpha: true,
             preserveDrawingBuffer: true,
-            canvas: myCanvas,
+            canvas: canvas,
             context: gl
         });
         renderer.autoClear = false;
@@ -59,6 +59,7 @@
         // to handle the matrices independently.
         const camera = new THREE.PerspectiveCamera();
         camera.matrixAutoUpdate = false;
+
     }
 
 </script>
